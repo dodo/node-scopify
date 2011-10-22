@@ -1,0 +1,10 @@
+{ "name": "scopify"
+, "description": "scope browserify's require away"
+, "version": "0.1.0"
+, "homepage": "https://github.com/dodo/node-scopify"
+, "author": "dodo (https://github.com/dodo)"
+, "repository": {"type": "git", "url": "git://github.com/dodo/node-scopify.git"}
+, "main": "scopify.js"
+, "engines": {"node": "0.4.x"}
+, "keywords": ["browserify", "plugin", "browser", "scope", "bundle"]
+}
