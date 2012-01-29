@@ -7,7 +7,7 @@ var createScope = function (opts) {
             if (opts.inject)
                 src += ";" + opts.inject + ";";
             if (opts.require)
-                src += ";require(" + opts.require + ");";
+                src += ";require('" + opts.require + "');";
             return ";(function(){" + src + "}).call(this);";
         });
     };
