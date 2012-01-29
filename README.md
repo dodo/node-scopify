@@ -26,3 +26,17 @@ app.use(bundle);
 
 Then just throw a `<script src="/browserify.js"></script>` into your HTML!
 
+## using createScope
+
+```javascript
+bundle.use(require('scopify').createScope({
+    inject:"console.log('running entry ...')",
+    require:"./entry"
+}));
+```
+
+Instead of just simply require scopify you can use the createScope directly to pass options:
+
+* `inject` takes a string containing code which will be injected right after the bundle source
+* `require` do an automatically require (just a shortcut for {inject:"require('<filename>')"})
+
