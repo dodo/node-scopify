@@ -37,6 +37,7 @@ bundle.use(require('scopify').createScope({
 
 Instead of just simply require scopify you can use the createScope directly to pass options:
 
-* `inject` takes a string containing code which will be injected right after the bundle source
+* `prepend` takes a string containing code which will be injected before the require statement
+* `append` takes a string containing code which will be injected after the require statement
 * `require` do an automatically require (just a shortcut for {inject:"require('<filename>')"})
 
